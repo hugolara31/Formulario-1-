@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="/favicon.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <!-- titulo -->
+    <h1>Formulario de Seguro</h1>
+    
+    <div class="contenedor">
+        <form id="formulario">
+            <!-- Campo de nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            
+            
+            <!-- Campo de apellido -->
+            <label for="apellido">Nombre:</label>
+            <input type="text" id="apellido" placeholder="Apellido" required>
+
+            <!-- Campo de correo electrónico -->
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" placeholder="Correo Electronico" required>
+
+            <!-- Campo de teléfono -->
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" placeholder="Telefono" required>
+            <br>
+            <br>
+            
+            <!-- Tipo de Seguro -->
+            <label for="selector">tipo de seguro:</label>
+            <select id="selector" name="selector">
+                <option selected>Seleciona</option>
+                <option  value="Basico">Basico</option>
+                <option  value="intermedio">intermedio</option>
+                <option  value="premium">premium</option>
+            </select>
+            <div>
+                valor del seguro: <span><p id="seleccionable"></p></span>
+            </div>
+     
+            <!-- Botón de envío -->
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <footer>
+        <p>2023</p>
+    </footer>
+    <script src="/index.js"></script>
+</body>
+</html>
